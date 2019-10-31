@@ -15,7 +15,7 @@ void setup()
   Serial.begin(115200);
 
   //裝置名稱 (SSID & 登入帳號), 密碼, LED腳位(ESP01->2, ESP12->1)
-  WebOTA.begin("DeviceName", "Password", 2);
+  WebOTA.begin("DeviceName", "Password", LED_BUILTIN);
 
   //紀錄「Ready」到 /Debug 頁面
   WebOTA.print("Ready");
