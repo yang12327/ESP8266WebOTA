@@ -9,7 +9,7 @@ class ESP8266WebOTA
 {
 public:
     ESP8266WebOTA(void);
-    void begin(const char *Name, const char *Password, int LED = 2);
+    void begin(char *Name, char *Password, int LED = 2);
     bool check(void);
     void print(String Content, bool Right = false);
 

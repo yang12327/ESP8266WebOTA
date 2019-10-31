@@ -38,7 +38,6 @@ void loop()
       WebOTA.print(T);
       WebOTA.print(String(Last) + "ms", true); //true代表靠右對齊；false代表靠左
     }
-
   }
   else
   {
@@ -52,7 +51,7 @@ int SendCount = 0; //傳送數量
 int LoseCount = 0; //傳送失敗數量
 String HttpGet(String URL)
 {
-  WebOTA.print(String(SendCount) + " " + String(LoseCount));
+  WebOTA.print("Send:" + String(SendCount) + " Lose:" + String(LoseCount));
   SendCount++;
   WiFiClient client;
   HTTPClient http;

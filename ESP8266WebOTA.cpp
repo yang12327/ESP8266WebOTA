@@ -97,10 +97,10 @@ void ESP8266WebOTA::print(String Content, bool Right)
   Debug = Temp;
 }
 
-void ESP8266WebOTA::begin(const char *Name, const char *Password, int led)
+void ESP8266WebOTA::begin(char *Name, char *Password, int led)
 {
-  strcpy(reinterpret_cast<char*>(DeviceName), Name);
-  strcpy(reinterpret_cast<char*>(DevicePassword), Password);
+  DeviceName = Name;
+  DevicePassword = Password;
   LED = led;
   pinMode(LED, OUTPUT);
   digitalWrite(LED, LOW);
