@@ -1,5 +1,6 @@
-# ESP8266WebOTA
+# ESP8266WebOTA（Arduino Library）
 ESP8266透過網頁升級韌體/變更WiFi設定/Debug偵錯頁面
+需要搭配 [Generic ESP8266 Module (2.5.2)](https://arduino-esp8266.readthedocs.io/en/2.5.2/installing.html) 使用
   
 ## 你可以使用的頁面：
    * /SSID     ---WiFi資訊設定(在WiFi未成功連接時預設跳轉此頁面)
